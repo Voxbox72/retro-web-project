@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../images/retro1.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h3{
+    text-align: center;
+    color:black;
+    padding-top: 100px;
+    font-size: 40px;
+}
+.line{
+    background-color: rgb(170, 48, 218);
+    display:block;
+    height: 5px;
+    width:60px;
+    margin:auto;
+    
+}
+
+/* ------------------------------------------------------Navigation------------------------------------------------------------- */
+nav{
+    font-family: 'Alien Encounters', sans-serif;    
+    width: 100%;
+    height: 50px;
+    top:0;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.7;
+}
+nav img{
+    margin-top: 1px;
+    height:95%;
+    width: 3.5%;
+    float: left;
+    margin-left: 5%;
+}
+nav ul{
+    margin-right: 100px;
+    list-style-type: none;
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin: 15px 15px;
+    
+}
+nav a{
+    text-decoration: none;
+    color:rgb(17, 163, 174);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: rgb(170, 48, 218);
+    margin-top: 2px;
+    transition: .5s;
+
+}
+nav a:hover::after{
+    width: 100%;
+}
+/* -----------------------------------------------------------Hero-------------------------------------------------------- */
+
+.hero-image{
+    height: 65vh;
+    /* background-image: url(../images/retro1.jpg); */
+    background-size: cover;
+    background-position: fixed;
+    position:relative;
+    
+}
+.content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Alien Encounters', sans-serif;
+    text-align: center;
+    width: 80%;
+    height: 40%;
+    
+}
+h1{
+    margin-top: 10%;
+    padding: 2% 0 5% 0;
+    font-size: 80px;
+    background: -webkit-linear-gradient( rgb(141, 20, 131), #ffff06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 20%;
+    
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0, 0.6);
+}
+
+/* --------------------------------------------------------------------Devices------------------------------------------------------ */
+
+.devices{
+    background-image: linear-gradient(rgba(116, 18, 116, 0.864), rgba(207, 207, 11, 0.774)) ;
+}
+
+.device-container{
+    margin-top: 5%;
+    width: 90%;
+    overflow: auto;
+    margin: auto;
+    font-family: 'Alien Encounters', sans-serif;
+    display:flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+
+.phone-img{
+    margin:auto;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 380px;
+}
+.p1{
+    background-image: url(../images/samsungs22.PNG);
+}
+.phone{
+    margin: 5% 0% ;
+    background-image:linear-gradient(#ecec4a, rgb(141,20,131));
+    width:28%;
+    position:relative;
+    border-radius: 10%;
+    text-align: center
+}
+
+.name{
+    color: rgb(26, 191, 191);
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.colors{
+    margin:1% 0% 1% 5%;
+    font-size: 20px;
+}
+
+.storage h4{
+    margin: 1% 0%;
+    font-size: 18px;
+
+}
+.storage label{
+    margin: 0% 1%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.buy{
+    height: 30px;
+    width: 120px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-image:linear-gradient(#ecec4a,rgb(141,20,131));
+    font-family: 'Alien Encounters', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------Footer---------------------------------------------------------------- */
+
+footer{
+    height: 20vh;
+    
+}
+
+.contact-container{
+    width: 80%;
+    margin:auto;
+    position: relative;
+}
+.contact-content ul{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    list-style-type: none;
+    margin-left: 42%;
+}
+.contact-content li{
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgb(40, 136, 136);
+    text-align: center;
+    margin-top:auto;
+}
+.contact-content li:hover{
+    transition: 0.7s;
+    background-color: rgb(17, 60, 60);
+}
+
+.contact-content i{
+    color:white;
+    font-size:30px;
+    padding-top: 22%;
+}
+.contact-content p{
+    text-align: center;
+    font-family: monospace;
+    padding-top:0.2%;
+    font-size: 9.5px;
+    color:white;
+    opacity: 0.8;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    font-family: 'Alien Encounters', sans-serif;
+
+  }
+
+  h2{
+    color: rgb(26, 191, 191);
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6%;
+    max-width: 500px;
+    padding: 10px;
+    background: -webkit-linear-gradient( rgb(150, 43, 142), #08545d);
+    transition: 2s;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: 0;
+    background-color: rgb(163, 194, 208);
+  }
+  
+
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: rgb(142, 194, 218);
+    outline: none;
+  }
+  
+.ship, .close{
+    height: 30px;
+    margin-left:5%;
+    width: 120px;
+    padding:0% 10px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Alien Encounters', sans-serif;
+    font-size: 20px;
+}
+.ship{
+    
+    background-image:-webkit-linear-gradient( #08545d, rgb(150, 43, 142) );
+}
+.close{
+    background-image:-webkit-linear-gradient( #08545d, rgb(150, 43, 70) );
+}
+
+.button-container{
+    margin-left: 18.5%;
+}
